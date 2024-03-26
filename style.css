@@ -148,22 +148,6 @@ body {
     margin-right: auto;
 }
 
-#aboutPage {
-    background-color: #ebebeb;
-    width: 100%;
-    height: 100vh;
-    padding-top: 70px;
-
-}
-
-#contactPage {
-    background-color: #ebebeb;
-    width: 100%;
-    height: 100vh;
-    padding-top: 70px;
-
-}
-
 #portfolioPage {
     background-color: #ebebeb;
     width: 100%;
@@ -269,17 +253,21 @@ body {
     text-decoration: none;
     text-align: center;
 }
+
 .btn:visited {
     color: #242526;
 }
+
 #demo {
     border: 3px solid #242526;
 }
+
 #demo:hover {
     background-color: #242526;
     color: whitesmoke;
 }
-#demo:hover + #code{
+
+#demo:hover+#code {
     border: 3px solid #242526;
     background-color: whitesmoke;
     color: #242526;
@@ -289,6 +277,7 @@ body {
     background-color: #242526;
     color: whitesmoke;
 }
+
 #code:hover {
     border: 3px solid #242526;
     background-color: whitesmoke;
@@ -296,10 +285,11 @@ body {
 }
 
 #skillsPage {
-    background-color: #ebebeb;
+    background-color: white;
     width: 100%;
-    height: 100vh;
     padding-top: 70px;
+    padding-bottom: 70px;
+    height: auto;
 
 }
 
@@ -310,7 +300,8 @@ body {
     align-items: flex-start;
     gap: 30px;
 }
-.skillItem{
+
+.skillItem {
     flex: 0 0 calc(25% - 20px);
     margin-bottom: 40px;
     display: flex;
@@ -328,31 +319,30 @@ body {
 
 @media screen and (max-width: 1200px) {
     .skillItem {
-        flex-basis: calc(33.33% - 20px); /* 3 items per row for screens <= 1200px */
-        max-width: calc(33.33% - 20px); /* Adjust max-width accordingly */
+        flex-basis: calc(33.33% - 20px);
     }
 }
 
 @media screen and (max-width: 800px) {
     .skillItem {
-        flex-basis: calc(50% - 20px); /* 2 items per row for screens <= 800px */
-        max-width: calc(50% - 20px); /* Adjust max-width accordingly */
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 }
 
 @media screen and (max-width: 600px) {
     .skillItem {
-        flex-basis: calc(100% - 20px); /* 1 item per row for screens <= 600px */
-        max-width: calc(100% - 20px); /* Adjust max-width accordingly */
+        flex-basis: calc(100% - 20px);
+        max-width: calc(100% - 20px);
     }
 }
 
-.skillItem:hover{
+.skillItem:hover {
     color: black;
     transform: scale(1.4);
 }
 
-.skillItem:hover #skillTitle{
+.skillItem:hover #skillTitle {
     color: #242526;
 }
 
@@ -367,5 +357,96 @@ body {
 
 #skillTitle {
     margin-top: 10px;
-    color: #ebebeb;
+    color: white;
 }
+
+
+#aboutPage {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: auto;
+
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutText {
+    text-align: justify;
+    text-indent: 10px;
+    flex: 1;
+    padding: 0 30px;
+    font-size: 1.1rem;
+}
+
+#aboutPic {
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 1200px){
+    /* .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    #aboutPage {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .aboutText {
+        text-align: center;
+        font-size: 42px;
+    }
+
+    #aboutPic {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aboutPage {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .aboutText {
+        text-align: center;
+    }
+
+    #aboutPic {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutText {
+        font-size: 14px;
+    }
+}
+
+
+#contactPage {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+
+}
+
