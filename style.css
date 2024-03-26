@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 0.5px solid red; */
+    border: 0.5px solid red;
 }
 
 html,
@@ -148,14 +148,6 @@ body {
     margin-right: auto;
 }
 
-#skillsPage {
-    background-color: #ebebeb;
-    width: 100%;
-    height: 100vh;
-    padding-top: 70px;
-
-}
-
 #aboutPage {
     background-color: #ebebeb;
     width: 100%;
@@ -205,8 +197,6 @@ body {
     flex-direction: row;
     border-radius: 5px;
     margin-top: 10px;
-    /* border: 0.5px solid red; */
-
 }
 
 .imgContainer img {
@@ -225,7 +215,6 @@ body {
     transform: scale(0.8);
     transition: 1s ease;
 }
-
 
 .projectTitle {
     font-size: 1.5rem;
@@ -304,4 +293,57 @@ body {
     border: 3px solid #242526;
     background-color: whitesmoke;
     color: #242526;
+}
+
+#skillsPage {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+.container1, .container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+.skillItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 140px;
+    transition: transform 0.5s;
+    color: white;
+    text-align: center;
+}
+
+.skillItem:hover{
+    color: black;
+    transform: scale(1.2);
+}
+
+.skillItem:hover #skillTitle{
+    color: #242526;
+}
+
+#skillIcon {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in 1s;
+    height: 120px;
+    width: 125px;
+    margin-top: 10px;
+}
+
+#skillTitle {
+    margin-top: 10px;
+    color: #ebebeb;
 }
