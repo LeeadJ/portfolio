@@ -13,7 +13,7 @@ body {
 }
 
 #coverPage {
-    background: url(/images/coverpage-back.avif);
+    background: url(/images/acoverpage-back.avif);
     background-size: cover;
     background-position: 50% 70%;
     width: 100%;
