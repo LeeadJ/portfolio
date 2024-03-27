@@ -310,7 +310,6 @@ body {
 }
 
 .skillItem {
-    border: 1px solid red;
     flex: 0 0 calc(25% - 20px);
     margin-bottom: 40px;
     display: flex;
@@ -362,15 +361,12 @@ body {
 }
 
 .aboutContainer {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: stretch;
 }
 
 .aboutText {
-    
-    border: 1px solid red;
     text-align: justify;
     text-indent: 10px;
     flex: 1;
@@ -390,6 +386,7 @@ body {
 
 #contactPage {
     background: url(/images/contact-background.avif);
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
     padding-top: 12vh;
@@ -397,19 +394,85 @@ body {
 
 }
 
-.contactContainer{
+.contactContainer {
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-}
-.contactTab{
-    width: 300px;
-    height: 500px;
-    background-color: whitesmoke;
-    
 }
 
+.contactTab {
+    width: 300px;
+    height: 600px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+
+#headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+#contactName {
+    padding: 15px;
+}
+
+#contactPos {
+    text-align: center;
+}
+
+#contactEmail {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#contactLogos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+a .logoItem {
+    width: 70px;
+    height: 70px;
+}
+
+a .contactCV {
+    width: 120px;
+    height: 180px;
+}
+
+.resume {
+    color: #242526;
+    border: 2px solid #242526;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
+    font-size: 24px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.resume:visited {
+    color: #242526;
+}
+
+.resume:hover {
+    background-color: #242526;
+    color: whitesmoke;
+}
