@@ -13,7 +13,7 @@ body {
 }
 
 #coverPage {
-    background: url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+    background: url(/images/coverpage-back.avif);
     background-size: cover;
     background-position: 50% 70%;
     width: 100%;
@@ -28,8 +28,8 @@ body {
     position: fixed !important;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 60px;
+    width: 100vw;
+    height: auto;
     background: #000000 !important;
     z-index: 1;
 }
@@ -38,7 +38,8 @@ body {
     font-family: sans-serif;
     transition: background-color 1s;
     padding: 15px;
-    font-size: 30px;
+    font-size: 3vw;
+    height: auto;
     text-decoration: none;
 }
 
@@ -59,13 +60,15 @@ body {
     list-style-type: none;
     display: flex;
     align-items: center;
+    margin-right: 25px;
+    gap: 10px;
 }
 
 .navItem {
     transition: color 1s;
     transition: background-color 1s;
     padding: 15px;
-    font-size: 24px;
+    font-size: 2.5vw;
     text-decoration: none;
 }
 
@@ -98,20 +101,22 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 
 .box .title {
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    font-size: 1.3vw;
+    height: auto;
     color: whitesmoke;
 }
 
 .box .sub-title {
-    width: 354.08px;
+    width: 100vw;
     position: relative;
     display: flex;
     align-items: center;
@@ -122,7 +127,7 @@ body {
 .sub-title p {
     color: #feb400;
     font-family: sans-serif;
-    font-size: 26px;
+    font-size: 2.2vw;
     font-weight: 200;
     font-style: italic;
 }
@@ -133,8 +138,9 @@ body {
     color: #242526;
     font-family: sans-serif;
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 3vw;
 }
 
 #underLine {
@@ -151,8 +157,9 @@ body {
 #portfolioPage {
     background-color: #ebebeb;
     width: 100%;
-    height: 100vh;
-    padding-top: 70px;
+    min-height: 100vh;
+    padding-top: 12vh;
+    padding-bottom: 70px;
 
 }
 
@@ -161,6 +168,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-width: 100%;
 }
 
 .singleProjectContainer {
@@ -287,9 +295,9 @@ body {
 #skillsPage {
     background-color: white;
     width: 100%;
-    padding-top: 70px;
+    min-height: 100vh;
+    padding-top: 12vh;
     padding-bottom: 70px;
-    height: auto;
 
 }
 
@@ -302,6 +310,7 @@ body {
 }
 
 .skillItem {
+    border: 1px solid red;
     flex: 0 0 calc(25% - 20px);
     margin-bottom: 40px;
     display: flex;
@@ -314,27 +323,9 @@ body {
     color: white;
     text-align: center;
     max-width: calc(25% - 20px);
-    width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-    .skillItem {
-        flex-basis: calc(33.33% - 20px);
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .skillItem {
-        flex-basis: calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .skillItem {
-        flex-basis: calc(100% - 20px);
-        max-width: calc(100% - 20px);
-    }
+    width: 12vw;
+    height: auto;
+    margin: 15px;
 }
 
 .skillItem:hover {
@@ -350,8 +341,8 @@ body {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s ease-in 1s;
-    height: 120px;
-    width: 125px;
+    height: auto;
+    width: 12vw;
     margin-top: 10px;
 }
 
@@ -362,91 +353,63 @@ body {
 
 
 #aboutPage {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background-color: #ebebeb;
     width: 100%;
-    height: 100vh;
-    padding-top: 70px;
+    min-height: 100vh;
+    padding-top: 12vh;
     padding-bottom: 70px;
-    height: auto;
 
 }
 
 .aboutContainer {
+    border: 1px solid blue;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .aboutText {
+    
+    border: 1px solid red;
     text-align: justify;
     text-indent: 10px;
     flex: 1;
-    padding: 0 30px;
-    font-size: 1.1rem;
+    padding: 0 3vw;
+    font-size: 1.8vw;
 }
 
 #aboutPic {
-    width: 50%;
+    width: 38vw;
     height: auto;
     flex-shrink: 0;
     margin-right: 20px;
 }
 
-@media screen and (min-width: 1200px){
-    /* .aboutContainer {
-        flex-direction: column;
-        align-items: center;
-    } */
 
-    #aboutPage {
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-
-    .aboutText {
-        text-align: center;
-        font-size: 42px;
-    }
-
-    #aboutPic {
-        width: 40%;
-    }
-}
-@media screen and (max-width: 768px) {
-    .aboutContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #aboutPage {
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-
-    .aboutText {
-        text-align: center;
-    }
-
-    #aboutPic {
-        max-width: 80%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .aboutText {
-        font-size: 14px;
-    }
-}
 
 
 #contactPage {
-    background-color: #ebebeb;
+    background: url(/images/contact-background.avif);
     width: 100%;
-    height: 100vh;
-    padding-top: 70px;
+    min-height: 100vh;
+    padding-top: 12vh;
+    padding-bottom: 70px;
 
+}
+
+.contactContainer{
+    width: 100%;
+    height: 600px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+.contactTab{
+    width: 300px;
+    height: 500px;
+    background-color: whitesmoke;
+    
 }
 
