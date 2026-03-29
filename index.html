@@ -4,32 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" , href="style.css">
-    <script src="main.js"></script>
+    <title>Leead Jacobowitz | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body style="height: 100%;">
+<body>
     <div id="coverPage">
-        <div id="navContainer">
-            <nav id="navBar">
-                <a id="navBarName" href="#coverPage">Leead Jacobowitz</a>
-                <ul id="navListItems">
-                    <li>
-                        <a class="navItem" href="#portfolioPage">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="navItem" href="#skillsPage">Skills</a>
-                    </li>
-                    <li>
-                        <a class="navItem" href="#aboutPage">About Me</a>
-                    </li>
-                    <li>
-                        <a class="navItem" href="#contactPage">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav id="navBar">
+            <a id="navBarName" href="#coverPage">Leead Jacobowitz</a>
+            <button id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navListItems">
+                <li>
+                    <a class="navItem" href="#portfolioPage">Portfolio</a>
+                </li>
+                <li>
+                    <a class="navItem" href="#skillsPage">Skills</a>
+                </li>
+                <li>
+                    <a class="navItem" href="#aboutPage">About Me</a>
+                </li>
+                <li>
+                    <a class="navItem" href="#contactPage">Contact</a>
+                </li>
+            </ul>
+        </nav>
         <div class="welcomeContainer">
             <div class="box">
                 <div class="title">
@@ -41,160 +46,155 @@
             </div>
         </div>
     </div>
-    <div id="portfolioPage">
-        <div>
-            <h1 id="pageTitle">Portfolio
-                <hr id="underLine">
-            </h1>
+
+    <section id="portfolioPage">
+        <div class="sectionHeader">
+            <h2 class="pageTitle">Portfolio</h2>
+            <hr class="underLine">
         </div>
         <div class="allProjectsContainer">
             <div class="singleProjectContainer">
-                <div class="imgContainer shrink">
+                <div class="imgContainer">
                     <a href="https://calculator-leead.netlify.app/" target="_blank">
-                        <img src="./images/calculator.png" alt="calculator image">
+                        <img src="./images/calculator.png" alt="JavaScript calculator app screenshot">
                     </a>
                 </div>
                 <div class="projectTitle">JavaScript Calculator</div>
                 <hr class="projectLine">
-                <div class="projectSkills">HTML | CSS | JAVASCRIPT</div>
+                <div class="projectSkills">HTML | CSS | JavaScript</div>
                 <div class="projectAbout">This is a calculator that provides basic arithmetic operations, including
                     addition, subtraction, multiplication, and division. The calculator features a clean and
                     user-friendly interface, making it easy to perform calculations.</div>
                 <div class="btnContainer">
-                    <a id="demo" class="btn" href="https://calculator-leead.netlify.app/" target="_blank">Demo</a>
-                    <a id="code" class="btn"
+                    <a class="btn btn-demo" href="https://calculator-leead.netlify.app/" target="_blank">Demo</a>
+                    <a class="btn btn-code"
                         href="https://github.com/LeeadJ/the-odin-project/tree/main/Project%3ACalculater"
                         target="_blank">Code</a>
                 </div>
             </div>
             <div class="singleProjectContainer">
-                <div class="imgContainer shrink">
+                <div class="imgContainer">
                     <a href="https://etch-a-sketch-leead.netlify.app/" target="_blank">
-                        <img src="./images/grid.png" alt="grid image">
+                        <img src="./images/grid.png" alt="Etch-A-Sketch app screenshot">
                     </a>
                 </div>
                 <div class="projectTitle">Etch-A-Sketch</div>
                 <hr class="projectLine">
-                <div class="projectSkills">HTML | CSS | JAVASCRIPT</div>
+                <div class="projectSkills">HTML | CSS | JavaScript</div>
                 <div class="projectAbout">This is a browser version of something between a sketchpad and an
                     Etch-A-Sketch. The grid can be defined and adjusted to any size under 100. Have fun!</div>
                 <div class="btnContainer">
-                    <a id="demo" class="btn" href="https://etch-a-sketch-leead.netlify.app/" target="_blank">Demo</a>
-                    <a id="code" class="btn"
+                    <a class="btn btn-demo" href="https://etch-a-sketch-leead.netlify.app/" target="_blank">Demo</a>
+                    <a class="btn btn-code"
                         href="https://github.com/LeeadJ/the-odin-project/tree/main/Project%3AEtch-a-Sketch"
                         target="_blank">Code</a>
                 </div>
             </div>
             <div class="singleProjectContainer">
-                <div class="imgContainer shrink">
+                <div class="imgContainer">
                     <a href="https://github.com/LeeadJ/RentIt" target="_blank">
-                        <img src="./images/rentit.png" alt="renit image">
+                        <img src="./images/rentit.png" alt="RentIt app screenshot">
                     </a>
                 </div>
-                <div class="projectTitle">Rentit</div>
+                <div class="projectTitle">RentIt</div>
                 <hr class="projectLine">
                 <div class="projectSkills">Android Studio | Python | Java | Firebase</div>
                 <div class="projectAbout">Rentit is a social renting app creating a user-friendly platform that allows
                     individuals to rent their underutilized items to others in their community.</div>
                 <div class="btnContainer">
-                    <a id="code" class="btn" href="https://github.com/LeeadJ/RentIt" target="_blank">Code</a>
+                    <a class="btn btn-code" href="https://github.com/LeeadJ/RentIt" target="_blank">Code</a>
                 </div>
             </div>
             <div class="singleProjectContainer">
-                <div class="imgContainer shrink">
+                <div class="imgContainer">
                     <a href="https://github.com/LeeadJ/ancient-coins?tab=readme-ov-file#About-The-Project"
                         target="_blank">
-                        <img src="./images/coin.png" alt="renit image">
+                        <img src="./images/coin.png" alt="Ancient coin classifier project screenshot">
                     </a>
                 </div>
                 <div class="projectTitle">Ancient Coin Classifier</div>
                 <hr class="projectLine">
-                <div class="projectSkills">Machine Learning | Python | OpenCV | TesorFlow</div>
+                <div class="projectSkills">Machine Learning | Python | OpenCV | TensorFlow</div>
                 <div class="projectAbout">Collaborating with the Israel Antiquities Authority, this is a ML
                     classification model gives real-world solutions for archeologists to classify ancient coins from
-                    different generations. </div>
+                    different generations.</div>
                 <div class="btnContainer">
-                    <a id="code" class="btn"
+                    <a class="btn btn-code"
                         href="https://github.com/LeeadJ/ancient-coins?tab=readme-ov-file#About-The-Project"
                         target="_blank">Code</a>
                 </div>
             </div>
-            <div class="singleProjectContainer">
-                <div class="imgContainer shrink">
-                    <a href="" target="_blank">
-                        <img src="icons/question-mark.png" alt="renit image">
-                    </a>
+            <div class="singleProjectContainer coming-soon">
+                <div class="imgContainer">
+                    <img src="icons/question-mark.png" alt="Coming soon placeholder">
                 </div>
                 <div class="projectTitle">Coming Soon...</div>
                 <hr class="projectLine">
-                <div class="projectSkills"></div>
-                <div class="projectAbout"></div>
-
             </div>
         </div>
-    </div>
-    <div id="skillsPage">
-        <div>
-            <h1 id="pageTitle">Skills
-                <hr id="underLine">
-            </h1>
+    </section>
+
+    <section id="skillsPage">
+        <div class="sectionHeader">
+            <h2 class="pageTitle">Skills</h2>
+            <hr class="underLine">
         </div>
         <div class="skillsContainer">
             <div class="skillItem">
-                <img id="skillIcon" src="icons/Html.png">
-                <div id="skillTitle">HTML5</div>
+                <img class="skillIcon" src="icons/Html.png" alt="HTML5">
+                <div class="skillTitle">HTML5</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/css.png">
-                <div id="skillTitle">CSS</div>
+                <img class="skillIcon" src="icons/css.png" alt="CSS">
+                <div class="skillTitle">CSS</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/javascript.png">
-                <div id="skillTitle">JavaScript</div>
+                <img class="skillIcon" src="icons/javascript.png" alt="JavaScript">
+                <div class="skillTitle">JavaScript</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/Typescript.png">
-                <div id="skillTitle">TypeScript</div>
+                <img class="skillIcon" src="icons/Typescript.png" alt="TypeScript">
+                <div class="skillTitle">TypeScript</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/react.png">
-                <div id="skillTitle">React</div>
+                <img class="skillIcon" src="icons/react.png" alt="React">
+                <div class="skillTitle">React</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/java.png">
-                <div id="skillTitle">JAVA</div>
+                <img class="skillIcon" src="icons/java.png" alt="Java">
+                <div class="skillTitle">Java</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/python.png">
-                <div id="skillTitle">Python</div>
+                <img class="skillIcon" src="icons/python.png" alt="Python">
+                <div class="skillTitle">Python</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/cpp.png">
-                <div id="skillTitle">C++</div>
+                <img class="skillIcon" src="icons/cpp.png" alt="C++">
+                <div class="skillTitle">C++</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/c.png">
-                <div id="skillTitle">C</div>
+                <img class="skillIcon" src="icons/c.png" alt="C">
+                <div class="skillTitle">C</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/nodejs.png">
-                <div id="skillTitle">NodeJS</div>
+                <img class="skillIcon" src="icons/nodejs.png" alt="NodeJS">
+                <div class="skillTitle">NodeJS</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/git.png">
-                <div id="skillTitle">Git</div>
+                <img class="skillIcon" src="icons/git.png" alt="Git">
+                <div class="skillTitle">Git</div>
             </div>
             <div class="skillItem">
-                <img id="skillIcon" src="icons/postgreSql.png">
-                <div id="skillTitle">PostgreSQL</div>
+                <img class="skillIcon" src="icons/postgreSql.png" alt="PostgreSQL">
+                <div class="skillTitle">PostgreSQL</div>
             </div>
         </div>
-    </div>
-    <div id="aboutPage">
-        <div>
-            <h1 id="pageTitle">About Me
-                <hr id="underLine">
-            </h1>
+    </section>
+
+    <section id="aboutPage">
+        <div class="sectionHeader">
+            <h2 class="pageTitle">About Me</h2>
+            <hr class="underLine">
         </div>
         <div class="aboutContainer">
             <div class="aboutText">
@@ -202,56 +202,53 @@
                     officer in the army, bringing skills such as problem-solving, communication, leadership, and
                     critical decision-making. I enjoy writing code and challenging myself with different projects. As a
                     curious learner, I am constantly expanding my skills and knowledge in new technologies.</p>
-                <br>
                 <p>During my time in the industry, I have held two roles. The first was as a software support engineer
                     where I learned how to analyze different bugs and create fixes for them. I also gained familiarity
                     with technologies like Docker, Kubernetes, AWS, Linux, and more.</p>
-                <br>
                 <p>My second job threw me in a whole different direction. I got the opportunity to temporarily work for
                     a pre-seed startup as a frontend Developer. There, my appetite was opened, and I have enjoyed
                     creating logical and visual code. I was able to gain experience in planning and creating new
                     features from scratch. It was a great experience!</p>
-                <br>
                 <p>If you're still reading... I am now excited to embark on the next chapter of my journey. If I somehow
                     interest you, please reach out and let me know!</p>
             </div>
-            <img id="aboutPic" src="images/me.png" alt="profile pic">
+            <img class="aboutPic" src="images/me.png" alt="Leead Jacobowitz profile photo">
         </div>
-    </div>
-    <div id="contactPage">
-        <div>
-            <h1 id="pageTitle" style="color: whitesmoke; margin-top: 70px;">Contact
-                <hr id="underLine">
-            </h1>
+    </section>
+
+    <section id="contactPage">
+        <div class="sectionHeader">
+            <h2 class="pageTitle contact-title">Contact</h2>
+            <hr class="underLine">
         </div>
         <div class="contactContainer">
             <div class="contactTab">
-                <img id="headshot" src="images/profile-pic.jpeg">
-
-                <h1 id="contactName">Leead Jacobowitz</h1>
-                <h3 id="contactPos">Software Engineer</h3>
-                <div id="contactEmail">
+                <img class="headshot" src="images/profile-pic.jpeg" alt="Leead Jacobowitz headshot">
+                <h2 class="contactName">Leead Jacobowitz</h2>
+                <h3 class="contactPos">Software Engineer</h3>
+                <div class="contactEmail">
                     <p>Email me:</p>
                     <a href="mailto:leead123@gmail.com">leead123@gmail.com</a>
                 </div>
-                <h4>Also check me out at :</h4>
-                <div id="contactLogos">
-                    <a class="shrink" href="https://www.linkedin.com/in/leead-jacobowitz-414793230/" target="_blank">
-                        <img class="logoItem" src="icons/linkedin.png" alt="">
+                <p class="contactSocial">Also check me out at:</p>
+                <div class="contactLogos">
+                    <a href="https://www.linkedin.com/in/leead-jacobowitz-414793230/" target="_blank"
+                        aria-label="LinkedIn">
+                        <img class="logoItem" src="icons/linkedin.png" alt="LinkedIn">
                     </a>
-                    <a class="shrink" href="https://github.com/LeeadJ" target="_blank">
-                        <img class="logoItem" src="icons/github.png" alt="">
+                    <a href="https://github.com/LeeadJ" target="_blank" aria-label="GitHub">
+                        <img class="logoItem" src="icons/github.png" alt="GitHub">
                     </a>
-                    <a class="shrink" href="https://www.facebook.com/leead.jacobowitz" target="_blank">
-                        <img class="logoItem" src="icons/facebook.png" alt="">
+                    <a href="https://www.facebook.com/leead.jacobowitz" target="_blank" aria-label="Facebook">
+                        <img class="logoItem" src="icons/facebook.png" alt="Facebook">
                     </a>
                 </div>
                 <a class="resume" href="images/Leead_Jacobowitz_CV.pdf" target="_blank">Resume</a>
             </div>
-
         </div>
+    </section>
 
-    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
